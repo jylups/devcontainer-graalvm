@@ -1,10 +1,11 @@
 FROM mcr.microsoft.com/devcontainers/base:ubuntu
 # Install tar and gzip to extract the Maven binaries
-ARG USER_HOME_DIR="/root"
 #ARG MAVEN_DOWNLOAD_URL=https://nexus.conseqta.io/repository/conseqta-cache/apache-maven/apache-maven-3.9.4-bin.tar.gz
 
 RUN apt-get update && apt-get install -y curl zip unzip
 
+
+USER vscode
 #install SDK man
 RUN curl -s "https://get.sdkman.io" | bash
 
