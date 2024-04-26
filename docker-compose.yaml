@@ -1,0 +1,4 @@
+services:
+  devcontainer:
+    image: jylups/devcontainer-graalvm  
+    command: sleep infinity
