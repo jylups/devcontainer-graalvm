@@ -13,7 +13,7 @@ RUN curl -s "https://get.sdkman.io" | bash
 SHELL ["/bin/bash", "-c"]    
 
 RUN source "$HOME/.sdkman/bin/sdkman-init.sh" \
-    && sdk install java 22-graal -y \
+    && sdk install java 2java 23.0.2-graal -y \
     && sdk install maven
 
 # RUN mkdir -p /usr/share/maven /usr/share/maven/ref 
